@@ -1,0 +1,79 @@
+/* Removed the universal selector to avoid unintended styling issues */
+body {
+    background: #f4f6fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: #fff;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px 25px 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+#taskInput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+button {
+    padding: 10px 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #0056b3;
+}
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+#taskList li {
+    background: #f8f9fb;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+#taskList li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+    cursor: pointer;
+    background: #e9ecef;
+}
+.delete-btn {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background 0.2s;
+}
+.delete-btn:hover {
+    background: #b52a37;
+}
