@@ -1,0 +1,55 @@
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+:root{
+  --bg: #1a1d20;
+  --surface: #0f1720;
+  --muted: #9aa4b2;
+  --text: #e6eef8;
+  --accent: #e50914;
+  font-weight: lighter;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #071018);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure main content takes full height under navbar */
+.main-content {
+  min-height: calc(100vh - 64px); /* adjust if navbar height differs */
+  padding: 1.25rem;
+  background: transparent;
+}
+
+/* Surfaces/cards */
+.navbar,
+.movie-card,
+.fav-empty,
+.movies-grid > * {
+  background: rgba(255,255,255,0.02);
+  color: var(--text);
+  border-radius: 8px;
+}
+
+/* Links and accents */
+a, .nav-link {
+  color: var(--text);
+  text-decoration: none;
+}
+a:hover { color: var(--accent); }
+
+/* Muted text */
+p, .muted {
+  color: var(--muted);
+}
